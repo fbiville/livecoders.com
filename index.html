@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>LiveCoders: professional coding for all!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
+
+    <style>
+        #beta {
+            display: inline-block;
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+        .well { overflow: auto;}
+        #starring { margin:2% auto;}
+        .secret-nicknames { font-size: 16pt;}
+        .also-featured { border: 1px solid #E3E3E3;}
+        .also-featured img { max-height: 170px;}
+        #container { margin-bottom: 1%;}
+
+        footer {
+            position: fixed;
+            width: 17%;
+            bottom: 1%;
+            right: 1%;
+            border:1px dotted black;
+            background-color: #FFF;
+            padding: 2px;
+            text-align: center;
+            font-size: 9pt;
+        }
+    </style>
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34871906-1']);
+        _gaq.push(['_setDomainName', 'livecoders.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+
+<div id="container" class="container-fluid">
+
+    <div class="page-header headings">
+        <h1 class="offset2"><span id="beta">[β]</span> <a href="index.html">LiveCoders.com</a>
+            <small>from professionals, with lots of &hearts;</small>
+        </h1>
+    </div>
+
+    <div class="row-fluid" id="starring">
+        <div class="well span10 offset1">
+            <img alt="Minecraft Logo" class="img-polaroid span3" id="main-logo" src="img/minecraft-logo.jpg"/>
+
+            <div class="span8">
+                <h2>¡ Notch in action !
+                    <small>[EN]</small>
+                </h2>
+                <p class="lead">
+                    See <a href="http://www.mojang.com/"><code class="secret-nicknames">Notch</code></a>,
+                    the creator of <a href="http://www.minecraft.net/">Minecraft</a>, coding a new game!
+                </p>
+
+                <p>
+                    <small><a class="btn btn-danger btn-large" href="/videos/notch.html">WATCH NOW</a></small>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span6 also-featured">
+            <div class="row-fluid">
+                <img alt="Refactoring simples" class="span3" src="img/clean_code.png"/>
+
+                <div class="span8 offset1">
+                    <h3>Refactoring simples en Java
+                        <small>[FR]</small>
+                    </h3>
+                    <p>
+                        <a href="http://www.java-freelance.fr/">Jean-Baptiste Lemée</a> va vous montrer quelques
+                        techniques de refactoring simples
+                        pour venir à bout des codes les plus monstrueux.
+                    </p>
+
+                    <p>
+                        <small><a class="btn btn-info" href="/videos/kata-refactoring.html">Regarder maintenant</a>
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="span6 also-featured">
+            <div class="offset1 span8">
+                <h3>Marre des gros frameworks !
+                    <small>[FR]</small>
+                </h3>
+                <p>
+                    <a href="http://blog.javabien.net/">David Gageot</a> prône par cette séance de live coding
+                    rafraîchissante la puissance des libraires ad-hoc quand elles sont bien combinées.
+                </p>
+
+                <p>
+                    <small><a class="btn btn-info" href="/videos/kittenmash.html">Regarder maintenant</a></small>
+                </p>
+            </div>
+            <img alt="Golden Hammer" class="span3" src="img/golden-hammer.jpg"/>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &hearts; <a id="feedback" href="http://www.foxyform.com/form.php?id=307562&sec_hash=d211572be23">Feedback?</a> |
+    <abbr title="Work In Progress">WIP</abbr> by <a href="http://about.me/fbiville">ME</a> &hearts;
+</footer>
+<script type="text/javascript">
+    $("#feedback").click(function(event) {
+        $(this).attr('target', '_blank');
+    });
+</script>
+</body>
+</html>
