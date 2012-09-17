@@ -11,7 +11,8 @@
     <link href="css/bootstrap-responsive.css" rel="stylesheet"/>
 
     <style>
-        #beta {
+      .headings h1 { margin:0 auto; text-align:center;}
+       #beta {
             display: inline-block;
             -moz-transform: rotate(-45deg);
             -o-transform: rotate(-45deg);
@@ -19,12 +20,12 @@
             transform: rotate(-45deg);
         }
         .well { overflow: auto;}
-        #starring { margin:2% auto;}
+        #starring { margin:2% auto 3%;}
         .secret-nicknames { font-size: 16pt;}
         .also-featured { border: 1px solid #E3E3E3;}
         .also-featured img { max-height: 170px;}
         #container { margin-bottom: 1%;}
-
+        #description { text-align:center;}
         footer {
             position: fixed;
             width: 17%;
@@ -58,13 +59,21 @@
 <div id="container" class="container-fluid">
 
     <div class="page-header headings">
-        <h1 class="offset2"><span id="beta">[β]</span> <a href="index.html">LiveCoders.com</a>
+        <h1><span id="beta">[β]</span> <a href="index.html">LiveCoders.com</a>
             <small>from professionals, with lots of &hearts;</small>
-        </h1>
+         </h1>
+    </div>
+
+    <div class="row-fluid">
+      <div class="span8 offset2">
+         <p class="lead" id="description">
+             Enjoy quality videos from professional programmers, showing off their amazing skills during live coding sessions.
+         </p>
+      </div>
     </div>
 
     <div class="row-fluid" id="starring">
-        <div class="well span10 offset1">
+        <div class="well span8 offset2">
             <img alt="Minecraft Logo" class="img-polaroid span3" id="main-logo" src="img/minecraft-logo.jpg"/>
 
             <div class="span8">
@@ -84,7 +93,7 @@
     </div>
 
     <div class="row-fluid">
-        <div class="span6 also-featured">
+        <div class="offset1 span5 also-featured">
             <div class="row-fluid">
                 <img alt="Refactoring simples" class="span3" src="img/clean_code.png"/>
 
@@ -105,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <div class="span6 also-featured">
+        <div class="span5 also-featured">
             <div class="offset1 span8">
                 <h3>Marre des gros frameworks !
                     <small>[FR]</small>
@@ -125,7 +134,7 @@
 </div>
 
 <footer>
-    &hearts; <a id="feedback" href="http://www.foxyform.com/form.php?id=307562&sec_hash=d211572be23">Feedback?</a> |
+    &hearts; <a id="feedback" href="http://www.foxyform.com/form.php?id=307562&sec_hash=d211572be23">Suggestions for improvements?</a> |
     <abbr title="Work In Progress">WIP</abbr> by <a href="http://about.me/fbiville">ME</a> &hearts;
 </footer>
 <script type="text/javascript">
